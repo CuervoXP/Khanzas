@@ -1,0 +1,349 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%; }
+
+.selected {
+  border-bottom: 1px solid black; }
+
+li {
+  list-style: none;
+  font-family: "Open Sans", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+nav {
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.445);
+  width: 100%;
+  background-color: #ffffff; }
+  nav label {
+    display: none;
+    padding: 5px; }
+    nav label img {
+      display: inline-block;
+      width: 30px;
+      height: 30px; }
+  nav #btn-menu {
+    display: none; }
+  nav .menu img {
+    width: 40px;
+    padding: 10px 0px 10px 0px; }
+  nav .menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    nav .menu ul li a {
+      font-size: 14px;
+      display: block;
+      margin: 22px 10px 0px 10px;
+      color: black;
+      font-weight: 600; }
+    nav .menu ul li a:hover {
+      color: #ff6600;
+      transition: all 0.2s; }
+  nav .Logo img {
+    width: 160px;
+    height: 53px;
+    padding: 0px;
+    margin-top: 5px; }
+
+section {
+  width: 100%; }
+
+.space-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%; }
+
+/*section*/
+.portada1 {
+  background-image: url(../img/Diseño\ sin\ título.png);
+  background-repeat: no-repeat;
+  font-family: "Outfit", sans-serif;
+  width: 100%;
+  height: 60%; }
+  .portada1 .texto-portada1 {
+    padding-top: 140px;
+    padding-left: 50px;
+    color: white;
+    font-size: 50px; }
+    .portada1 .texto-portada1 #abajo {
+      margin-bottom: 15px; }
+    .portada1 .texto-portada1 h3 {
+      font-size: 25px;
+      font-family: "Roboto", sans-serif; }
+  .portada1 .boton-portada1 {
+    font-size: 25px;
+    text-align: center;
+    width: 280px;
+    display: inline-block;
+    background-color: black;
+    padding: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    margin-top: 50px; }
+    .portada1 .boton-portada1 a {
+      color: white; }
+    .portada1 .boton-portada1 a:hover {
+      color: orange;
+      transition: all 0.5s; }
+
+/*novedades*/
+.novedades .titulo-novedades {
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif; }
+
+/*contenedor*/
+.contenedor1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0; }
+  .contenedor1 .card {
+    position: relative;
+    width: 325px;
+    height: 425px;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s; }
+    .contenedor1 .card .descuento {
+      text-align: center;
+      color: white;
+      position: absolute;
+      right: -10px;
+      top: 10px;
+      display: inline-block;
+      background: black;
+      width: 80px;
+      height: 40px;
+      padding: 5px; }
+      .contenedor1 .card .descuento p {
+        padding-top: 5px; }
+    .contenedor1 .card img {
+      padding-top: 20px;
+      margin-bottom: 10px;
+      width: 255px;
+      height: 280px; }
+    .contenedor1 .card h4 {
+      padding-top: 20çpx;
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif; }
+    .contenedor1 .card .boton-card {
+      margin-top: 10px;
+      display: inline-block;
+      background-color: black;
+      padding: 10px; }
+      .contenedor1 .card .boton-card a {
+        font-size: 15px;
+        font-family: "Roboto", sans-serif;
+        color: white; }
+  .contenedor1 img:hover {
+    box-shadow: 2px -3px 7px rgba(0, 0, 0, 0.2); }
+
+.contenedor-2 {
+  background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0; }
+  .contenedor-2 .carta-2 {
+    width: 300px;
+    height: 200px;
+    margin: 0px 70px 0px 70px;
+    text-align: center;
+    transition: all 0.5s; }
+    .contenedor-2 .carta-2 img {
+      margin-top: 40px;
+      width: 75px;
+      height: 77px; }
+    .contenedor-2 .carta-2 p {
+      margin-top: 10px;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px; }
+
+/*galeria*/
+.contenedor-galeria {
+  width: 100%;
+  height: auto;
+  background-color: #ff550041;
+  margin: 0;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 466px 466px;
+  grid-template-rows: 320px 320px;
+  grid-column-gap: 100px;
+  grid-row-gap: 50px;
+  padding: 100px; }
+  .contenedor-galeria .cuadros {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 466px;
+    height: 320px;
+    background-image: url(../img/cartelera/otoño.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #4b4b4b;
+    background-blend-mode: soft-light; }
+  .contenedor-galeria .cuadros:nth-of-type(2) {
+    background-image: url(../img/cartelera/verano.jpg); }
+  .contenedor-galeria .cuadros:nth-of-type(3) {
+    background-image: url(../img/cartelera/descubrir.jpg); }
+  .contenedor-galeria .cuadros:nth-of-type(4) {
+    background-image: url(../img/cartelera/temporada.jpg); }
+  .contenedor-galeria .cuadros:nth-of-type(5) {
+    background-image: url(../img/cartelera/descuentos.jpg); }
+  .contenedor-galeria p {
+    color: white;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; }
+
+@media screen and (max-width: 320px) {
+  nav .Logo {
+    display: none; }
+  nav label {
+    display: flex;
+    justify-content: space-between; }
+
+  .menu {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.918);
+    margin-left: -70%;
+    transition: all 0.3s; }
+    .menu .space-evenly {
+      justify-content: flex-start; }
+    .menu ul {
+      flex-direction: column; }
+    .menu img {
+      display: none; }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0; }
+
+  nav .menu .space-evenly ul li a {
+    margin: 11px 0px 11px 10px; }
+
+  .portada1 {
+    width: 100%;
+    height: 80%; }
+    .portada1 .texto-portada1 {
+      padding-top: 100px;
+      padding-left: 20px;
+      font-size: 25px; }
+      .portada1 .texto-portada1 .boton-portada1 {
+        margin-top: 30px;
+        width: auto;
+        font-size: 10px; }
+
+  .contenedor-galeria {
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-row-gap: 0px;
+    padding: 0; }
+    .contenedor-galeria .cuadros {
+      width: 320px; } }
+@media screen and (min-width: 321px) and (max-width: 414px) {
+  nav .Logo {
+    display: none; }
+  nav label {
+    display: flex;
+    justify-content: space-between; }
+
+  .menu {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.918);
+    margin-left: -70%;
+    transition: all 0.3s; }
+    .menu .space-evenly {
+      justify-content: flex-start; }
+    .menu ul {
+      flex-direction: column; }
+    .menu img {
+      display: none; }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0; }
+
+  nav .menu .space-evenly ul li a {
+    margin: 11px 0px 11px 10px; }
+
+  .portada1 {
+    width: 100%;
+    height: 53%; }
+    .portada1 .texto-portada1 {
+      padding-top: 100px;
+      padding-left: 20px;
+      font-size: 25px; }
+      .portada1 .texto-portada1 .boton-portada1 {
+        margin-top: 30px;
+        width: auto;
+        font-size: 10px; }
+
+  .contenedor-galeria {
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-row-gap: 0px;
+    padding: 0; }
+    .contenedor-galeria .cuadros {
+      width: 414px; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav .Logo {
+    display: none; }
+  nav label {
+    display: flex;
+    justify-content: space-between; }
+
+  .menu {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.918);
+    margin-left: -70%;
+    transition: all 0.3s; }
+    .menu .space-evenly {
+      justify-content: flex-start; }
+    .menu ul {
+      flex-direction: column; }
+    .menu img {
+      display: none; }
+
+  #btn-menu:checked ~ .menu {
+    margin: 0; }
+
+  nav .menu .space-evenly ul li a {
+    margin: 11px 0px 11px 10px; }
+
+  .portada1 {
+    width: 100%;
+    height: 40%; }
+    .portada1 .texto-portada1 {
+      padding-top: 100px;
+      padding-left: 20px;
+      font-size: 25px; }
+      .portada1 .texto-portada1 .boton-portada1 {
+        margin-top: 30px;
+        width: auto;
+        font-size: 10px; }
+
+  .contenedor-galeria {
+    grid-template-columns: none;
+    grid-template-rows: none; }
+    .contenedor-galeria .cuadros {
+      width: 414px; } }
+
+/*# sourceMappingURL=estilos.css.map */
